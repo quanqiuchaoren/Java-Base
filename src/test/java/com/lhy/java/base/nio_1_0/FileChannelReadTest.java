@@ -9,7 +9,10 @@ import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
 import java.nio.charset.StandardCharsets;
 
-public class FileChannelTest {
+public class FileChannelReadTest {
+    /**
+     * 从FileChannel读取数据
+     */
     @Test
     void hello2() throws IOException {
         /*
