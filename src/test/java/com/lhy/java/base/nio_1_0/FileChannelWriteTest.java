@@ -15,8 +15,9 @@ public class FileChannelWriteTest {
     void write() throws IOException {
         String filePathStr = FileUtil.getFilePathStr("fileChannelWrite.txt");
         try (FileOutputStream fileOutputStream = new FileOutputStream(filePathStr);
+             FileChannel fileChannel = fileOutputStream.getChannel();
         ) {
-            FileChannel fileChannel = fileOutputStream.getChannel();
+
             ByteBuffer byteBuffer = ByteBuffer.allocate(8);
             // 一个字母是一个byte
             String str = "write first line \r\n write second line";
