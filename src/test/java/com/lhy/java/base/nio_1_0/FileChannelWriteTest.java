@@ -25,7 +25,6 @@ public class FileChannelWriteTest {
             System.out.println(Arrays.toString(bytes));
             // 输出：[119, 114, 105, 116, 101, 32, 102, 105, 114, 115, 116, 32, 108, 105, 110, 101, 13, 10, 32, 119, 114, 105, 116, 101, 32, 115, 101, 99, 111, 110, 100, 32, 108, 105, 110, 101]
             // 一个字母，一个byte
-
             System.out.println(Arrays.toString(bytes));
             for (int i = 0; i < bytes.length; ) {
                 if (byteBuffer.hasRemaining()) {
